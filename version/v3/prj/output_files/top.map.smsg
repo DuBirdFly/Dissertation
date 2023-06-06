@@ -1,0 +1,4 @@
+Warning (10268): Verilog HDL information at key_ctrl.v(39): always construct contains both blocking and non-blocking assignments File: D:/PrjWorkspace/Dissertation/version/v3/rtl/mid/key/key_ctrl.v Line: 39
+Warning (10268): Verilog HDL information at canny_top.v(29): always construct contains both blocking and non-blocking assignments File: D:/PrjWorkspace/Dissertation/version/v3/rtl/canny/canny_top.v Line: 29
+Info (10281): Verilog HDL Declaration information at color_bar.v(115): object "H_ACTIVE" differs only in case from object "h_active" in the same scope File: D:/PrjWorkspace/Dissertation/version/v3/rtl/vga/color_bar.v Line: 115
+Info (10281): Verilog HDL Declaration information at color_bar.v(119): object "V_ACTIVE" differs only in case from object "v_active" in the same scope File: D:/PrjWorkspace/Dissertation/version/v3/rtl/vga/color_bar.v Line: 119

@@ -1,0 +1,2 @@
+v1
+PORT_SWAPPING,PORT_SWAP_TYPE_DSPMULT,canny_top:u_canny_top|otus:u_otus|otus_dsp:u_otus_dsp|mul_32_32:u_mul_32_32|lpm_mult:lpm_mult_component|mult_pfn:auto_generated|mac_mult5,

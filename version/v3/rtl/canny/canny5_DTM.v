@@ -1,0 +1,61 @@
+// 双阈值边缘检测(DTM = Double threshold monitoring)
+module canny5_DTM (
+    input  wire                         clk                        ,
+    input  wire        [   7:0]         NMS_data                   ,
+    input  wire                         NMS_hs, NMS_vs, NMS_de     ,
+    input  wire        [   7:0]         Tmax                       ,// OTUS算法在最大类间方差对应的灰度阈值
+    output reg                          DTM_data                   ,// 二值化
+    output wire                         DTM_hs, DTM_vs, DTM_de      
+);
+
+// 矩阵顺序:
+// {a1, a2, a3}
+// {a4, a5, a6}
+// {a7, a8, a9}
+wire                   [   7:0]         a1, a2, a3, a4, a5, a6, a7, a8, a9;
+wire                   [   7:0]         Th, Tl                     ;
+wire                                    connected                  ;
+
+assign Th = Tmax[7:0];
+assign Tl = Tmax[7:2];
+assign connected = a1>Th | a2>Th | a3>Th | a4>Th | a6>Th | a7>Th | a8>Th | a9> Th;
+
+// clk1, 3x3 算子
+opr_3x3_1024x8 opr_3x3_1024x8_m0 (
+    .clk                               (clk                       ),
+    .din_vld                           (NMS_de                    ),
+    .din                               (NMS_data                  ),
+    .a1                                (a1                        ),
+    .a2                                (a2                        ),
+    .a3                                (a3                        ),
+    .a4                                (a4                        ),
+    .a5                                (a5                        ),
+    .a6                                (a6                        ),
+    .a7                                (a7                        ),
+    .a8                                (a8                        ),
+    .a9                                (a9                        ) 
+);
+
+// clk2
+always @(posedge clk) begin
+    if ((a5 > Th) | (a5 > Tl & a5 < Th & connected))
+        DTM_data <= 1'b1;
+    else
+        DTM_data <= 1'b0;
+end
+
+// 信号同步: 形成3x3矩阵耗费1clk, 双阈值边缘检测耗费1clk, 因此信号要延迟2拍
+reg                    [   1:0]         DTM_de_r,DTM_hs_r,DTM_vs_r ;
+
+always @(posedge clk) begin
+    DTM_de_r <= {DTM_de_r[0] ,NMS_de};
+    DTM_hs_r <= {DTM_hs_r[0] ,NMS_hs};
+    DTM_vs_r <= {DTM_vs_r[0] ,NMS_vs};
+end
+
+assign DTM_de = DTM_de_r[1];
+assign DTM_hs = DTM_hs_r[1];
+assign DTM_vs = DTM_vs_r[1];
+
+
+endmodule

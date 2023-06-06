@@ -1,0 +1,5 @@
+v1
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,canny_top:u_canny_top|otus:u_otus|otus_dsp:u_otus_dsp|mul_32_32:u_mul_32_32|lpm_mult:lpm_mult_component|mult_pfn:auto_generated|mac_out8,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,canny_top:u_canny_top|otus:u_otus|otus_dsp:u_otus_dsp|mul_32_32:u_mul_32_32|lpm_mult:lpm_mult_component|mult_pfn:auto_generated|mac_out6,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,canny_top:u_canny_top|otus:u_otus|otus_dsp:u_otus_dsp|mul_32_32:u_mul_32_32|lpm_mult:lpm_mult_component|mult_pfn:auto_generated|mac_out4,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,canny_top:u_canny_top|otus:u_otus|otus_dsp:u_otus_dsp|mul_32_32:u_mul_32_32|lpm_mult:lpm_mult_component|mult_pfn:auto_generated|mac_out2,

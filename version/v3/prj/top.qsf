@@ -1,0 +1,209 @@
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE6F17C8
+set_global_assignment -name TOP_LEVEL_ENTITY top
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 256
+set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 8
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name ENABLE_OCT_DONE OFF
+set_global_assignment -name STRATIXV_CONFIGURATION_SCHEME "PASSIVE SERIAL"
+set_global_assignment -name USE_CONFIGURATION_DEVICE OFF
+set_global_assignment -name CRC_ERROR_OPEN_DRAIN OFF
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS_WEAK_PULLUP "AS INPUT TRI-STATED"
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name RESERVE_DATA0_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name RESERVE_DATA1_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name RESERVE_FLASH_NCE_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name RESERVE_DCLK_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
+set_location_assignment PIN_E1 -to clk
+set_location_assignment PIN_M15 -to key1
+set_location_assignment PIN_N13 -to rst_n
+set_location_assignment PIN_F15 -to sdram_addr[12]
+set_location_assignment PIN_D16 -to sdram_addr[11]
+set_location_assignment PIN_F14 -to sdram_addr[10]
+set_location_assignment PIN_D15 -to sdram_addr[9]
+set_location_assignment PIN_C16 -to sdram_addr[8]
+set_location_assignment PIN_C15 -to sdram_addr[7]
+set_location_assignment PIN_B16 -to sdram_addr[6]
+set_location_assignment PIN_A15 -to sdram_addr[5]
+set_location_assignment PIN_A14 -to sdram_addr[4]
+set_location_assignment PIN_C14 -to sdram_addr[3]
+set_location_assignment PIN_D14 -to sdram_addr[2]
+set_location_assignment PIN_E11 -to sdram_addr[1]
+set_location_assignment PIN_F11 -to sdram_addr[0]
+set_location_assignment PIN_F13 -to sdram_ba[1]
+set_location_assignment PIN_G11 -to sdram_ba[0]
+set_location_assignment PIN_J12 -to sdram_cas_n
+set_location_assignment PIN_F16 -to sdram_cke
+set_location_assignment PIN_B14 -to sdram_clk
+set_location_assignment PIN_K10 -to sdram_cs_n
+set_location_assignment PIN_L15 -to sdram_dq[15]
+set_location_assignment PIN_L16 -to sdram_dq[14]
+set_location_assignment PIN_K15 -to sdram_dq[13]
+set_location_assignment PIN_K16 -to sdram_dq[12]
+set_location_assignment PIN_J15 -to sdram_dq[11]
+set_location_assignment PIN_J16 -to sdram_dq[10]
+set_location_assignment PIN_J11 -to sdram_dq[9]
+set_location_assignment PIN_G16 -to sdram_dq[8]
+set_location_assignment PIN_K12 -to sdram_dq[7]
+set_location_assignment PIN_L11 -to sdram_dq[6]
+set_location_assignment PIN_L14 -to sdram_dq[5]
+set_location_assignment PIN_L13 -to sdram_dq[4]
+set_location_assignment PIN_L12 -to sdram_dq[3]
+set_location_assignment PIN_N14 -to sdram_dq[2]
+set_location_assignment PIN_M12 -to sdram_dq[1]
+set_location_assignment PIN_P14 -to sdram_dq[0]
+set_location_assignment PIN_G15 -to sdram_dqm[1]
+set_location_assignment PIN_J14 -to sdram_dqm[0]
+set_location_assignment PIN_K11 -to sdram_ras_n
+set_location_assignment PIN_J13 -to sdram_we_n
+set_location_assignment PIN_F6 -to vga_out_b[4]
+set_location_assignment PIN_E5 -to vga_out_b[3]
+set_location_assignment PIN_D3 -to vga_out_b[2]
+set_location_assignment PIN_D4 -to vga_out_b[1]
+set_location_assignment PIN_C3 -to vga_out_b[0]
+set_location_assignment PIN_J6 -to vga_out_g[5]
+set_location_assignment PIN_L8 -to vga_out_g[4]
+set_location_assignment PIN_K8 -to vga_out_g[3]
+set_location_assignment PIN_F7 -to vga_out_g[2]
+set_location_assignment PIN_G5 -to vga_out_g[1]
+set_location_assignment PIN_F5 -to vga_out_g[0]
+set_location_assignment PIN_L6 -to vga_out_hs
+set_location_assignment PIN_L4 -to vga_out_r[4]
+set_location_assignment PIN_L3 -to vga_out_r[3]
+set_location_assignment PIN_L7 -to vga_out_r[2]
+set_location_assignment PIN_K5 -to vga_out_r[1]
+set_location_assignment PIN_K6 -to vga_out_r[0]
+set_location_assignment PIN_N3 -to vga_out_vs
+set_location_assignment PIN_T14 -to cmos_db[7]
+set_location_assignment PIN_R10 -to cmos_db[6]
+set_location_assignment PIN_T12 -to cmos_db[5]
+set_location_assignment PIN_T13 -to cmos_db[4]
+set_location_assignment PIN_R8 -to cmos_db[3]
+set_location_assignment PIN_T9 -to cmos_db[2]
+set_location_assignment PIN_T10 -to cmos_db[1]
+set_location_assignment PIN_R11 -to cmos_db[0]
+set_location_assignment PIN_T11 -to cmos_href
+set_location_assignment PIN_R6 -to cmos_pclk
+set_location_assignment PIN_R12 -to cmos_scl
+set_location_assignment PIN_R13 -to cmos_sda
+set_location_assignment PIN_T7 -to cmos_vsync
+set_location_assignment PIN_R9 -to cmos_rst_n
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name LAST_QUARTUS_VERSION "18.0.0 Standard Edition"
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim (Verilog)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH tb_median_filtering -section_id eda_simulation
+set_global_assignment -name VERILOG_FILE ../rtl/mid/seg_dynamic/seg_dynamic.v
+set_global_assignment -name VERILOG_FILE ../rtl/mid/seg_dynamic/binary_8421.v
+set_global_assignment -name VERILOG_FILE ../rtl/mid/key/key_filtering.v
+set_global_assignment -name VERILOG_FILE ../rtl/mid/key/key_ctrl.v
+set_global_assignment -name VERILOG_FILE ../rtl/mid/key/key.v
+set_global_assignment -name VERILOG_FILE ../rtl/canny/otus/otus_dsp.v
+set_global_assignment -name VERILOG_FILE ../rtl/canny/otus/otus.v
+set_global_assignment -name VERILOG_FILE ../rtl/canny/otus/histo.v
+set_global_assignment -name VERILOG_FILE ../rtl/mid/get_NegPos.v
+set_global_assignment -name VERILOG_FILE ../rtl/canny/canny5_DTM.v
+set_global_assignment -name VERILOG_FILE ../rtl/canny/canny4_NMS.v
+set_global_assignment -name VERILOG_FILE ../rtl/canny/opr_3x3_1024x8.v
+set_global_assignment -name VERILOG_FILE ../rtl/canny/canny3_sobel.v
+set_global_assignment -name VERILOG_FILE ../rtl/canny/canny2_gaus.v
+set_global_assignment -name VERILOG_FILE ../rtl/canny/canny1_YCbCr.v
+set_global_assignment -name VERILOG_FILE ../rtl/canny/canny_top.v
+set_global_assignment -name VERILOG_FILE ../rtl/cmos/i2c/timescale.v
+set_global_assignment -name VERILOG_FILE ../rtl/cmos/i2c/i2c_master_top.v
+set_global_assignment -name VERILOG_FILE ../rtl/cmos/i2c/i2c_master_defines.v
+set_global_assignment -name VERILOG_FILE ../rtl/cmos/i2c/i2c_master_byte_ctrl.v
+set_global_assignment -name VERILOG_FILE ../rtl/cmos/i2c/i2c_master_bit_ctrl.v
+set_global_assignment -name QIP_FILE ../rtl/ip/fifo/afifo_16_512.qip
+set_global_assignment -name VERILOG_FILE ../rtl/top.v
+set_global_assignment -name VERILOG_FILE ../rtl/vga/video_define.v
+set_global_assignment -name VERILOG_FILE ../rtl/vga/rgb565_gen.v
+set_global_assignment -name VERILOG_FILE ../rtl/vga/color_bar.v
+set_global_assignment -name VERILOG_FILE ../rtl/sdram/sdram_core.v
+set_global_assignment -name VERILOG_FILE ../rtl/sdram/frame_read_write.v
+set_global_assignment -name VERILOG_FILE ../rtl/sdram/frame_fifo_write.v
+set_global_assignment -name VERILOG_FILE ../rtl/sdram/frame_fifo_read.v
+set_global_assignment -name VERILOG_FILE ../rtl/mid/cmos_write_req_gen.v
+set_global_assignment -name QIP_FILE ../rtl/ip/pll/video_pll.qip
+set_global_assignment -name QIP_FILE ../rtl/ip/pll/sys_pll.qip
+set_global_assignment -name VERILOG_FILE ../rtl/cmos/lut_ov5640_rgb565_1024_768.v
+set_global_assignment -name VERILOG_FILE ../rtl/cmos/i2c_config.v
+set_global_assignment -name VERILOG_FILE ../rtl/cmos/cmos_8_16bit.v
+set_global_assignment -name QIP_FILE ../rtl/ip/shift/shift1024x8.qip
+set_global_assignment -name QIP_FILE ../rtl/ip/ram/ram2p_128x20b.qip
+set_global_assignment -name QIP_FILE ../rtl/ip/lpm_div/div_23_16.qip
+set_global_assignment -name QIP_FILE ../rtl/ip/lpm_mult/mul_32_32.qip
+set_location_assignment PIN_E16 -to key3
+set_location_assignment PIN_M16 -to key2
+set_location_assignment PIN_N9 -to SEL[5]
+set_location_assignment PIN_P9 -to SEL[4]
+set_location_assignment PIN_M10 -to SEL[3]
+set_location_assignment PIN_N11 -to SEL[2]
+set_location_assignment PIN_P11 -to SEL[1]
+set_location_assignment PIN_M11 -to SEL[0]
+set_location_assignment PIN_R16 -to DIG[7]
+set_location_assignment PIN_N15 -to DIG[6]
+set_location_assignment PIN_N12 -to DIG[5]
+set_location_assignment PIN_P15 -to DIG[4]
+set_location_assignment PIN_T15 -to DIG[3]
+set_location_assignment PIN_P16 -to DIG[2]
+set_location_assignment PIN_N16 -to DIG[1]
+set_location_assignment PIN_R14 -to DIG[0]
+set_global_assignment -name EDA_TEST_BENCH_NAME tb_median_filtering -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_median_filtering
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_median_filtering -section_id tb_median_filtering
+set_global_assignment -name EDA_TEST_BENCH_NAME tb_otus -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_otus
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_otus -section_id tb_otus
+set_global_assignment -name EDA_TEST_BENCH_NAME tb_canny -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb_canny
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME tb_canny -section_id tb_canny
+set_global_assignment -name EDA_TEST_BENCH_FILE ../tb/tb/tb_median_filtering.v -section_id tb_median_filtering
+set_global_assignment -name EDA_TEST_BENCH_FILE ../tb/my_ip/fifo/sfifo.v -section_id tb_median_filtering
+set_global_assignment -name EDA_TEST_BENCH_FILE ../tb/my_ip/med_filter/median_filtering.v -section_id tb_median_filtering
+set_global_assignment -name EDA_TEST_BENCH_FILE ../tb/my_ip/med_filter/sort.v -section_id tb_median_filtering
+set_global_assignment -name EDA_TEST_BENCH_FILE ../tb/my_ip/shift/opr_3x3.v -section_id tb_median_filtering
+set_global_assignment -name EDA_TEST_BENCH_FILE ../tb/my_ip/shift/shift_1x3.v -section_id tb_median_filtering
+set_global_assignment -name EDA_TEST_BENCH_FILE ../tb/devide/gray_gen.v -section_id tb_median_filtering
+set_global_assignment -name EDA_TEST_BENCH_FILE ../tb/devide/my_color_bar.v -section_id tb_median_filtering
+set_global_assignment -name EDA_TEST_BENCH_FILE ../tb/devide/my_video_define.v -section_id tb_median_filtering
+set_global_assignment -name EDA_TEST_BENCH_FILE ../tb/devide/Nyru_128x96_gray.txt -section_id tb_median_filtering
+set_global_assignment -name EDA_TEST_BENCH_FILE ../tb/devide/gray_gen.v -section_id tb_otus
+set_global_assignment -name EDA_TEST_BENCH_FILE ../tb/devide/my_color_bar.v -section_id tb_otus
+set_global_assignment -name EDA_TEST_BENCH_FILE ../tb/devide/my_video_define.v -section_id tb_otus
+set_global_assignment -name EDA_TEST_BENCH_FILE ../rtl/mid/get_NegPos.v -section_id tb_otus
+set_global_assignment -name EDA_TEST_BENCH_FILE ../rtl/ip/ram/ram2p_128x20b.v -section_id tb_otus
+set_global_assignment -name EDA_TEST_BENCH_FILE ../rtl/ip/lpm_div/div_23_16.v -section_id tb_otus
+set_global_assignment -name EDA_TEST_BENCH_FILE ../rtl/ip/lpm_mult/mul_32_32.v -section_id tb_otus
+set_global_assignment -name EDA_TEST_BENCH_FILE ../tb/devide/JiaRan_50x50.txt -section_id tb_otus
+set_global_assignment -name EDA_TEST_BENCH_FILE ../tb/devide/NyaRu_128x96.txt -section_id tb_otus
+set_global_assignment -name EDA_TEST_BENCH_FILE ../tb/otus/histo.v -section_id tb_otus
+set_global_assignment -name EDA_TEST_BENCH_FILE ../tb/otus/otus.v -section_id tb_otus
+set_global_assignment -name EDA_TEST_BENCH_FILE ../tb/otus/otus_dsp.v -section_id tb_otus
+set_global_assignment -name EDA_TEST_BENCH_FILE ../tb/tb/tb_otus.v -section_id tb_otus
+set_global_assignment -name EDA_TEST_BENCH_FILE ../tb/tb/tb_canny.v -section_id tb_canny
+set_global_assignment -name EDA_TEST_BENCH_FILE ../tb/canny/canny_top.v -section_id tb_canny
+set_global_assignment -name EDA_TEST_BENCH_FILE ../tb/canny/nms.v -section_id tb_canny
+set_global_assignment -name EDA_TEST_BENCH_FILE ../tb/canny/sobel.v -section_id tb_canny
+set_global_assignment -name EDA_TEST_BENCH_FILE ../tb/devide/gray_gen.v -section_id tb_canny
+set_global_assignment -name EDA_TEST_BENCH_FILE ../tb/devide/my_color_bar.v -section_id tb_canny
+set_global_assignment -name EDA_TEST_BENCH_FILE ../tb/devide/my_video_define.v -section_id tb_canny
+set_global_assignment -name EDA_TEST_BENCH_FILE ../tb/devide/NyaRu_128x96_gray.txt -section_id tb_canny
+set_global_assignment -name EDA_TEST_BENCH_FILE ../tb/my_ip/fifo/sfifo.v -section_id tb_canny
+set_global_assignment -name EDA_TEST_BENCH_FILE ../tb/my_ip/shift/opr_3x3.v -section_id tb_canny
+set_global_assignment -name EDA_TEST_BENCH_FILE ../tb/my_ip/shift/shift_1x3.v -section_id tb_canny
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

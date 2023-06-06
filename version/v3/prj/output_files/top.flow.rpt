@@ -1,0 +1,184 @@
+Flow report for top
+Fri Apr 28 19:00:24 2023
+Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; Flow Summary                                                                         ;
++------------------------------------+-------------------------------------------------+
+; Flow Status                        ; Successful - Fri Apr 28 19:00:24 2023           ;
+; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Standard Edition ;
+; Revision Name                      ; top                                             ;
+; Top-level Entity Name              ; top                                             ;
+; Family                             ; Cyclone IV E                                    ;
+; Device                             ; EP4CE6F17C8                                     ;
+; Timing Models                      ; Final                                           ;
+; Total logic elements               ; 4,188 / 6,272 ( 67 % )                          ;
+;     Total combinational functions  ; 3,733 / 6,272 ( 60 % )                          ;
+;     Dedicated logic registers      ; 2,012 / 6,272 ( 32 % )                          ;
+; Total registers                    ; 2012                                            ;
+; Total pins                         ; 92 / 180 ( 51 % )                               ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 86,912 / 276,480 ( 31 % )                       ;
+; Embedded Multiplier 9-bit elements ; 8 / 30 ( 27 % )                                 ;
+; Total PLLs                         ; 2 / 2 ( 100 % )                                 ;
++------------------------------------+-------------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 04/28/2023 18:59:09 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; top                 ;
++-------------------+---------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                     ;
++--------------------------------------+-------------------------------------------+---------------+-------------+---------------------+
+; Assignment Name                      ; Value                                     ; Default Value ; Entity Name ; Section Id          ;
++--------------------------------------+-------------------------------------------+---------------+-------------+---------------------+
+; COMPILER_SIGNATURE_ID                ; 141734661985400.168267954910348           ; --            ; --          ; --                  ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                        ; --            ; --          ; tb_canny            ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                        ; --            ; --          ; tb_otus             ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                        ; --            ; --          ; tb_median_filtering ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; tb_median_filtering                       ; --            ; --          ; eda_simulation      ;
+; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                               ; --            ; --          ; eda_simulation      ;
+; EDA_SIMULATION_TOOL                  ; ModelSim (Verilog)                        ; <None>        ; --          ; --                  ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                           ; --            ; --          ; eda_simulation      ;
+; EDA_TEST_BENCH_FILE                  ; ../tb/tb/tb_canny.v                       ; --            ; --          ; tb_canny            ;
+; EDA_TEST_BENCH_FILE                  ; ../tb/canny/canny_top.v                   ; --            ; --          ; tb_canny            ;
+; EDA_TEST_BENCH_FILE                  ; ../tb/canny/nms.v                         ; --            ; --          ; tb_canny            ;
+; EDA_TEST_BENCH_FILE                  ; ../tb/canny/sobel.v                       ; --            ; --          ; tb_canny            ;
+; EDA_TEST_BENCH_FILE                  ; ../tb/devide/gray_gen.v                   ; --            ; --          ; tb_canny            ;
+; EDA_TEST_BENCH_FILE                  ; ../tb/devide/my_color_bar.v               ; --            ; --          ; tb_canny            ;
+; EDA_TEST_BENCH_FILE                  ; ../tb/devide/my_video_define.v            ; --            ; --          ; tb_canny            ;
+; EDA_TEST_BENCH_FILE                  ; ../tb/devide/NyaRu_128x96_gray.txt        ; --            ; --          ; tb_canny            ;
+; EDA_TEST_BENCH_FILE                  ; ../tb/my_ip/fifo/sfifo.v                  ; --            ; --          ; tb_canny            ;
+; EDA_TEST_BENCH_FILE                  ; ../tb/my_ip/shift/opr_3x3.v               ; --            ; --          ; tb_canny            ;
+; EDA_TEST_BENCH_FILE                  ; ../tb/my_ip/shift/shift_1x3.v             ; --            ; --          ; tb_canny            ;
+; EDA_TEST_BENCH_FILE                  ; ../tb/devide/gray_gen.v                   ; --            ; --          ; tb_otus             ;
+; EDA_TEST_BENCH_FILE                  ; ../tb/devide/my_color_bar.v               ; --            ; --          ; tb_otus             ;
+; EDA_TEST_BENCH_FILE                  ; ../tb/devide/my_video_define.v            ; --            ; --          ; tb_otus             ;
+; EDA_TEST_BENCH_FILE                  ; ../rtl/mid/get_NegPos.v                   ; --            ; --          ; tb_otus             ;
+; EDA_TEST_BENCH_FILE                  ; ../rtl/ip/ram/ram2p_128x20b.v             ; --            ; --          ; tb_otus             ;
+; EDA_TEST_BENCH_FILE                  ; ../rtl/ip/lpm_div/div_23_16.v             ; --            ; --          ; tb_otus             ;
+; EDA_TEST_BENCH_FILE                  ; ../rtl/ip/lpm_mult/mul_32_32.v            ; --            ; --          ; tb_otus             ;
+; EDA_TEST_BENCH_FILE                  ; ../tb/devide/JiaRan_50x50.txt             ; --            ; --          ; tb_otus             ;
+; EDA_TEST_BENCH_FILE                  ; ../tb/devide/NyaRu_128x96.txt             ; --            ; --          ; tb_otus             ;
+; EDA_TEST_BENCH_FILE                  ; ../tb/otus/histo.v                        ; --            ; --          ; tb_otus             ;
+; EDA_TEST_BENCH_FILE                  ; ../tb/otus/otus.v                         ; --            ; --          ; tb_otus             ;
+; EDA_TEST_BENCH_FILE                  ; ../tb/otus/otus_dsp.v                     ; --            ; --          ; tb_otus             ;
+; EDA_TEST_BENCH_FILE                  ; ../tb/tb/tb_otus.v                        ; --            ; --          ; tb_otus             ;
+; EDA_TEST_BENCH_FILE                  ; ../tb/tb/tb_median_filtering.v            ; --            ; --          ; tb_median_filtering ;
+; EDA_TEST_BENCH_FILE                  ; ../tb/my_ip/fifo/sfifo.v                  ; --            ; --          ; tb_median_filtering ;
+; EDA_TEST_BENCH_FILE                  ; ../tb/my_ip/med_filter/median_filtering.v ; --            ; --          ; tb_median_filtering ;
+; EDA_TEST_BENCH_FILE                  ; ../tb/my_ip/med_filter/sort.v             ; --            ; --          ; tb_median_filtering ;
+; EDA_TEST_BENCH_FILE                  ; ../tb/my_ip/shift/opr_3x3.v               ; --            ; --          ; tb_median_filtering ;
+; EDA_TEST_BENCH_FILE                  ; ../tb/my_ip/shift/shift_1x3.v             ; --            ; --          ; tb_median_filtering ;
+; EDA_TEST_BENCH_FILE                  ; ../tb/devide/gray_gen.v                   ; --            ; --          ; tb_median_filtering ;
+; EDA_TEST_BENCH_FILE                  ; ../tb/devide/my_color_bar.v               ; --            ; --          ; tb_median_filtering ;
+; EDA_TEST_BENCH_FILE                  ; ../tb/devide/my_video_define.v            ; --            ; --          ; tb_median_filtering ;
+; EDA_TEST_BENCH_FILE                  ; ../tb/devide/Nyru_128x96_gray.txt         ; --            ; --          ; tb_median_filtering ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_canny                                  ; --            ; --          ; tb_canny            ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_otus                                   ; --            ; --          ; tb_otus             ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_median_filtering                       ; --            ; --          ; tb_median_filtering ;
+; EDA_TEST_BENCH_NAME                  ; tb_median_filtering                       ; --            ; --          ; eda_simulation      ;
+; EDA_TEST_BENCH_NAME                  ; tb_otus                                   ; --            ; --          ; eda_simulation      ;
+; EDA_TEST_BENCH_NAME                  ; tb_canny                                  ; --            ; --          ; eda_simulation      ;
+; EDA_TIME_SCALE                       ; 1 ps                                      ; --            ; --          ; eda_simulation      ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                        ; --            ; --          ; --                  ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                         ; --            ; --          ; --                  ;
+; MISC_FILE                            ; ../rtl/ip/pll/video_pll_bb.v              ; --            ; --          ; --                  ;
+; MISC_FILE                            ; ../rtl/ip/pll/video_pll.ppf               ; --            ; --          ; --                  ;
+; MISC_FILE                            ; ../rtl/ip/pll/sys_pll.ppf                 ; --            ; --          ; --                  ;
+; MISC_FILE                            ; ../rtl/ip/shift/shift1024x8_inst.v        ; --            ; --          ; --                  ;
+; MISC_FILE                            ; ../rtl/ip/shift/shift1024x8_bb.v          ; --            ; --          ; --                  ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS       ; Half Signal Swing                         ; --            ; --          ; --                  ;
+; OUTPUT_IO_TIMING_FAR_END_VMEAS       ; Half Signal Swing                         ; --            ; --          ; --                  ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS      ; Half Vccio                                ; --            ; --          ; --                  ;
+; OUTPUT_IO_TIMING_NEAR_END_VMEAS      ; Half Vccio                                ; --            ; --          ; --                  ;
+; PARTITION_COLOR                      ; -- (Not supported for targeted family)    ; --            ; --          ; Top                 ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family)    ; --            ; --          ; Top                 ;
+; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family)    ; --            ; --          ; Top                 ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                       ; --            ; --          ; --                  ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW     ; --            ; --          ; --                  ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                              ; --            ; --          ; --                  ;
++--------------------------------------+-------------------------------------------+---------------+-------------+---------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:33     ; 1.0                     ; 4849 MB             ; 00:00:45                           ;
+; Fitter               ; 00:00:23     ; 1.1                     ; 5580 MB             ; 00:00:39                           ;
+; Assembler            ; 00:00:02     ; 1.0                     ; 4685 MB             ; 00:00:01                           ;
+; Timing Analyzer      ; 00:00:06     ; 1.5                     ; 4837 MB             ; 00:00:06                           ;
+; EDA Netlist Writer   ; 00:00:06     ; 1.0                     ; 4692 MB             ; 00:00:06                           ;
+; Total                ; 00:01:10     ; --                      ; --                  ; 00:01:37                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                    ;
++----------------------+------------------+------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++----------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis ; LAPTOP-FU74F2BN  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; LAPTOP-FU74F2BN  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; LAPTOP-FU74F2BN  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; LAPTOP-FU74F2BN  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; LAPTOP-FU74F2BN  ; Windows 10 ; 10.0       ; x86_64         ;
++----------------------+------------------+------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off sdram_ov5640_vga -c top
+quartus_fit --read_settings_files=off --write_settings_files=off sdram_ov5640_vga -c top
+quartus_asm --read_settings_files=off --write_settings_files=off sdram_ov5640_vga -c top
+quartus_sta sdram_ov5640_vga -c top
+quartus_eda --read_settings_files=off --write_settings_files=off sdram_ov5640_vga -c top
+
+
+

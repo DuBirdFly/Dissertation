@@ -1,0 +1,1067 @@
+# Reading D:/EDATools/modelsim10_7/tcl/vsim/pref.tcl
+# //  ModelSim SE-64 10.7 Dec  7 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do top_run_msim_rtl_verilog.do
+# if ![file isdirectory verilog_libs] {
+# 	file mkdir verilog_libs
+# }
+# 
+# vlib verilog_libs/altera_ver
+# ** Warning: (vlib-34) Library already exists at "verilog_libs/altera_ver".
+# vmap altera_ver ./verilog_libs/altera_ver
+# Model Technology ModelSim SE-64 vmap 10.7 Lib Mapping Utility 2017.12 Dec  7 2017
+# vmap altera_ver ./verilog_libs/altera_ver 
+# Copying D:/EDATools/modelsim10_7/win64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# vlog -vlog01compat -work altera_ver {d:/edatools/quartus18/quartus/eda/sim_lib/altera_primitives.v}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 21:13:07 on Feb 09,2023
+# vlog -reportprogress 300 -vlog01compat -work altera_ver d:/edatools/quartus18/quartus/eda/sim_lib/altera_primitives.v 
+# -- Compiling module global
+# -- Compiling module carry
+# -- Compiling module cascade
+# -- Compiling module carry_sum
+# -- Compiling module exp
+# -- Compiling module soft
+# -- Compiling module opndrn
+# -- Compiling module row_global
+# -- Compiling module TRI
+# -- Compiling module lut_input
+# -- Compiling module lut_output
+# -- Compiling module latch
+# -- Compiling module dlatch
+# -- Compiling module prim_gdff
+# -- Compiling module dff
+# -- Compiling module dffe
+# -- Compiling module dffea
+# -- Compiling module dffeas
+# -- Compiling module dffeas_pr
+# -- Compiling module prim_gtff
+# -- Compiling module tff
+# -- Compiling module tffe
+# -- Compiling module prim_gjkff
+# -- Compiling module jkff
+# -- Compiling module jkffe
+# -- Compiling module prim_gsrff
+# -- Compiling module srff
+# -- Compiling module srffe
+# -- Compiling module clklock
+# -- Compiling module alt_inbuf
+# -- Compiling module alt_outbuf
+# -- Compiling module alt_outbuf_tri
+# -- Compiling module alt_iobuf
+# -- Compiling module alt_inbuf_diff
+# -- Compiling module alt_outbuf_diff
+# -- Compiling module alt_outbuf_tri_diff
+# -- Compiling module alt_iobuf_diff
+# -- Compiling module alt_bidir_diff
+# -- Compiling module alt_bidir_buf
+# -- Compiling UDP PRIM_GDFF_LOW
+# -- Compiling UDP PRIM_GDFF_LOW_SCLR_PRIORITY
+# -- Compiling UDP PRIM_GDFF_HIGH
+# -- Compiling UDP PRIM_GDFF_HIGH_SCLR_PRIORITY
+# 
+# Top level modules:
+# 	global
+# 	carry
+# 	cascade
+# 	carry_sum
+# 	exp
+# 	soft
+# 	opndrn
+# 	row_global
+# 	TRI
+# 	lut_input
+# 	lut_output
+# 	latch
+# 	dlatch
+# 	dff
+# 	dffe
+# 	dffea
+# 	dffeas
+# 	dffeas_pr
+# 	tff
+# 	tffe
+# 	jkff
+# 	jkffe
+# 	srff
+# 	srffe
+# 	clklock
+# 	alt_inbuf
+# 	alt_outbuf
+# 	alt_outbuf_tri
+# 	alt_iobuf
+# 	alt_inbuf_diff
+# 	alt_outbuf_diff
+# 	alt_outbuf_tri_diff
+# 	alt_iobuf_diff
+# 	alt_bidir_diff
+# 	alt_bidir_buf
+# End time: 21:13:07 on Feb 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlib verilog_libs/lpm_ver
+# ** Warning: (vlib-34) Library already exists at "verilog_libs/lpm_ver".
+# vmap lpm_ver ./verilog_libs/lpm_ver
+# Model Technology ModelSim SE-64 vmap 10.7 Lib Mapping Utility 2017.12 Dec  7 2017
+# vmap lpm_ver ./verilog_libs/lpm_ver 
+# Modifying modelsim.ini
+# vlog -vlog01compat -work lpm_ver {d:/edatools/quartus18/quartus/eda/sim_lib/220model.v}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 21:13:08 on Feb 09,2023
+# vlog -reportprogress 300 -vlog01compat -work lpm_ver d:/edatools/quartus18/quartus/eda/sim_lib/220model.v 
+# -- Compiling module LPM_MEMORY_INITIALIZATION
+# -- Compiling module LPM_HINT_EVALUATION
+# -- Compiling module LPM_DEVICE_FAMILIES
+# -- Compiling module lpm_constant
+# -- Compiling module lpm_inv
+# -- Compiling module lpm_and
+# -- Compiling module lpm_or
+# -- Compiling module lpm_xor
+# -- Compiling module lpm_bustri
+# -- Compiling module lpm_mux
+# -- Compiling module lpm_decode
+# -- Compiling module lpm_clshift
+# -- Compiling module lpm_add_sub
+# -- Compiling module lpm_compare
+# -- Compiling module lpm_mult
+# -- Compiling module lpm_divide
+# -- Compiling module lpm_abs
+# -- Compiling module lpm_counter
+# -- Compiling module lpm_latch
+# -- Compiling module lpm_ff
+# -- Compiling module lpm_shiftreg
+# -- Compiling module lpm_ram_dq
+# -- Compiling module lpm_ram_dp
+# -- Compiling module lpm_ram_io
+# -- Compiling module lpm_rom
+# -- Compiling module lpm_fifo
+# -- Compiling module lpm_fifo_dc_dffpipe
+# -- Compiling module lpm_fifo_dc_fefifo
+# -- Compiling module lpm_fifo_dc_async
+# -- Compiling module lpm_fifo_dc
+# -- Compiling module lpm_inpad
+# -- Compiling module lpm_outpad
+# -- Compiling module lpm_bipad
+# 
+# Top level modules:
+# 	lpm_constant
+# 	lpm_inv
+# 	lpm_and
+# 	lpm_or
+# 	lpm_xor
+# 	lpm_bustri
+# 	lpm_mux
+# 	lpm_decode
+# 	lpm_clshift
+# 	lpm_add_sub
+# 	lpm_compare
+# 	lpm_mult
+# 	lpm_divide
+# 	lpm_abs
+# 	lpm_counter
+# 	lpm_latch
+# 	lpm_ff
+# 	lpm_shiftreg
+# 	lpm_ram_dq
+# 	lpm_ram_dp
+# 	lpm_ram_io
+# 	lpm_rom
+# 	lpm_fifo
+# 	lpm_fifo_dc
+# 	lpm_inpad
+# 	lpm_outpad
+# 	lpm_bipad
+# End time: 21:13:08 on Feb 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlib verilog_libs/sgate_ver
+# ** Warning: (vlib-34) Library already exists at "verilog_libs/sgate_ver".
+# vmap sgate_ver ./verilog_libs/sgate_ver
+# Model Technology ModelSim SE-64 vmap 10.7 Lib Mapping Utility 2017.12 Dec  7 2017
+# vmap sgate_ver ./verilog_libs/sgate_ver 
+# Modifying modelsim.ini
+# vlog -vlog01compat -work sgate_ver {d:/edatools/quartus18/quartus/eda/sim_lib/sgate.v}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 21:13:08 on Feb 09,2023
+# vlog -reportprogress 300 -vlog01compat -work sgate_ver d:/edatools/quartus18/quartus/eda/sim_lib/sgate.v 
+# -- Compiling module oper_add
+# -- Compiling module oper_addsub
+# -- Compiling module mux21
+# -- Compiling module io_buf_tri
+# -- Compiling module io_buf_opdrn
+# -- Compiling module oper_mult
+# -- Compiling module tri_bus
+# -- Compiling module oper_div
+# -- Compiling module oper_mod
+# -- Compiling module oper_left_shift
+# -- Compiling module oper_right_shift
+# -- Compiling module oper_rotate_left
+# -- Compiling module oper_rotate_right
+# -- Compiling module oper_less_than
+# -- Compiling module oper_mux
+# -- Compiling module oper_selector
+# -- Compiling module oper_decoder
+# -- Compiling module oper_bus_mux
+# -- Compiling module oper_latch
+# 
+# Top level modules:
+# 	oper_add
+# 	oper_addsub
+# 	mux21
+# 	io_buf_tri
+# 	io_buf_opdrn
+# 	oper_mult
+# 	tri_bus
+# 	oper_div
+# 	oper_mod
+# 	oper_left_shift
+# 	oper_right_shift
+# 	oper_rotate_left
+# 	oper_rotate_right
+# 	oper_less_than
+# 	oper_mux
+# 	oper_selector
+# 	oper_decoder
+# 	oper_bus_mux
+# 	oper_latch
+# End time: 21:13:08 on Feb 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlib verilog_libs/altera_mf_ver
+# ** Warning: (vlib-34) Library already exists at "verilog_libs/altera_mf_ver".
+# vmap altera_mf_ver ./verilog_libs/altera_mf_ver
+# Model Technology ModelSim SE-64 vmap 10.7 Lib Mapping Utility 2017.12 Dec  7 2017
+# vmap altera_mf_ver ./verilog_libs/altera_mf_ver 
+# Modifying modelsim.ini
+# vlog -vlog01compat -work altera_mf_ver {d:/edatools/quartus18/quartus/eda/sim_lib/altera_mf.v}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 21:13:09 on Feb 09,2023
+# vlog -reportprogress 300 -vlog01compat -work altera_mf_ver d:/edatools/quartus18/quartus/eda/sim_lib/altera_mf.v 
+# -- Compiling module lcell
+# -- Compiling module ALTERA_MF_MEMORY_INITIALIZATION
+# -- Compiling module ALTERA_MF_HINT_EVALUATION
+# -- Compiling module ALTERA_DEVICE_FAMILIES
+# -- Compiling module dffp
+# -- Compiling module pll_iobuf
+# -- Compiling module stx_m_cntr
+# -- Compiling module stx_n_cntr
+# -- Compiling module stx_scale_cntr
+# -- Compiling module MF_pll_reg
+# -- Compiling module MF_stratix_pll
+# -- Compiling module arm_m_cntr
+# -- Compiling module arm_n_cntr
+# -- Compiling module arm_scale_cntr
+# -- Compiling module MF_stratixii_pll
+# -- Compiling module ttn_m_cntr
+# -- Compiling module ttn_n_cntr
+# -- Compiling module ttn_scale_cntr
+# -- Compiling module MF_stratixiii_pll
+# -- Compiling module cda_m_cntr
+# -- Compiling module cda_n_cntr
+# -- Compiling module cda_scale_cntr
+# -- Compiling module MF_cycloneiii_pll
+# -- Compiling module MF_cycloneiiigl_m_cntr
+# -- Compiling module MF_cycloneiiigl_n_cntr
+# -- Compiling module MF_cycloneiiigl_scale_cntr
+# -- Compiling module cycloneiiigl_post_divider
+# -- Compiling module MF_cycloneiiigl_pll
+# -- Compiling module altpll
+# -- Compiling module altlvds_rx
+# -- Compiling module stratix_lvds_rx
+# -- Compiling module stratixgx_dpa_lvds_rx
+# -- Compiling module stratixii_lvds_rx
+# -- Compiling module flexible_lvds_rx
+# -- Compiling module stratixiii_lvds_rx
+# -- Compiling module stratixiii_lvds_rx_channel
+# -- Compiling module stratixiii_lvds_rx_dpa
+# -- Compiling module altlvds_tx
+# -- Compiling module stratixv_local_clk_divider
+# -- Compiling module stratix_tx_outclk
+# -- Compiling module stratixii_tx_outclk
+# -- Compiling module flexible_lvds_tx
+# -- Compiling module dcfifo_dffpipe
+# -- Compiling module dcfifo_fefifo
+# -- Compiling module dcfifo_async
+# -- Compiling module dcfifo_sync
+# -- Compiling module dcfifo_low_latency
+# -- Compiling module dcfifo_mixed_widths
+# -- Compiling module dcfifo
+# -- Compiling module altera_syncram_derived
+# -- Compiling module altera_syncram_derived_forwarding_logic
+# -- Compiling module altaccumulate
+# -- Compiling module altmult_accum
+# -- Compiling module altmult_add
+# -- Compiling module altfp_mult
+# -- Compiling module altsqrt
+# -- Compiling module altclklock
+# -- Compiling module altddio_in
+# -- Compiling module altddio_out
+# -- Compiling module altddio_bidir
+# -- Compiling module altdpram
+# -- Compiling module altsyncram
+# -- Compiling module altsyncram_body
+# -- Compiling module alt3pram
+# -- Compiling module parallel_add
+# -- Compiling module scfifo
+# -- Compiling module altshift_taps
+# -- Compiling module a_graycounter
+# -- Compiling module altsquare
+# -- Compiling module altera_std_synchronizer
+# -- Compiling module altera_std_synchronizer_bundle
+# -- Compiling module alt_cal
+# -- Compiling module alt_cal_mm
+# -- Compiling module alt_cal_c3gxb
+# -- Compiling module alt_cal_sv
+# -- Compiling module alt_cal_av
+# -- Compiling module alt_aeq_s4
+# -- Compiling module alt_eyemon
+# -- Compiling module alt_dfe
+# -- Compiling module signal_gen
+# -- Compiling module jtag_tap_controller
+# -- Compiling module dummy_hub
+# -- Compiling module sld_virtual_jtag
+# -- Compiling module sld_signaltap
+# -- Compiling module altstratixii_oct
+# -- Compiling module altparallel_flash_loader
+# -- Compiling module altserial_flash_loader
+# -- Compiling module alt_fault_injection
+# -- Compiling module sld_virtual_jtag_basic
+# -- Compiling module altsource_probe
+# 
+# Top level modules:
+# 	lcell
+# 	altpll
+# 	altlvds_rx
+# 	altlvds_tx
+# 	dcfifo
+# 	altaccumulate
+# 	altmult_accum
+# 	altmult_add
+# 	altfp_mult
+# 	altsqrt
+# 	altclklock
+# 	altddio_bidir
+# 	altdpram
+# 	alt3pram
+# 	parallel_add
+# 	scfifo
+# 	altshift_taps
+# 	a_graycounter
+# 	altsquare
+# 	altera_std_synchronizer_bundle
+# 	alt_cal
+# 	alt_cal_mm
+# 	alt_cal_c3gxb
+# 	alt_cal_sv
+# 	alt_cal_av
+# 	alt_aeq_s4
+# 	alt_eyemon
+# 	alt_dfe
+# 	sld_virtual_jtag
+# 	sld_signaltap
+# 	altstratixii_oct
+# 	altparallel_flash_loader
+# 	altserial_flash_loader
+# 	alt_fault_injection
+# 	sld_virtual_jtag_basic
+# 	altsource_probe
+# End time: 21:13:10 on Feb 09,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vlib verilog_libs/altera_lnsim_ver
+# ** Warning: (vlib-34) Library already exists at "verilog_libs/altera_lnsim_ver".
+# vmap altera_lnsim_ver ./verilog_libs/altera_lnsim_ver
+# Model Technology ModelSim SE-64 vmap 10.7 Lib Mapping Utility 2017.12 Dec  7 2017
+# vmap altera_lnsim_ver ./verilog_libs/altera_lnsim_ver 
+# Modifying modelsim.ini
+# vlog -sv -work altera_lnsim_ver {d:/edatools/quartus18/quartus/eda/sim_lib/altera_lnsim.sv}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 21:13:11 on Feb 09,2023
+# vlog -reportprogress 300 -sv -work altera_lnsim_ver d:/edatools/quartus18/quartus/eda/sim_lib/altera_lnsim.sv 
+# -- Compiling package altera_lnsim_functions
+# -- Compiling package altera_generic_pll_functions
+# -- Compiling module generic_pll
+# -- Importing package altera_lnsim_functions
+# -- Importing package altera_generic_pll_functions
+# -- Compiling module generic_cdr
+# -- Compiling module common_28nm_ram_pulse_generator
+# -- Compiling module common_28nm_ram_register
+# -- Compiling module common_28nm_ram_block
+# -- Compiling module generic_m20k
+# -- Compiling module generic_m10k
+# -- Compiling module common_28nm_mlab_cell_pulse_generator
+# -- Compiling module common_28nm_mlab_latch
+# -- Compiling module common_28nm_mlab_cell_core
+# -- Compiling module common_porta_latches
+# -- Compiling module generic_28nm_hp_mlab_cell_impl
+# -- Compiling module common_porta_registers
+# -- Compiling module generic_28nm_lc_mlab_cell_impl
+# -- Compiling module common_28nm_lutram_register
+# -- Compiling module generic_14nm_mlab_cell_impl
+# -- Compiling module common_14nm_lutram_register
+# -- Compiling module generic_mux
+# -- Compiling module generic_device_pll
+# -- Compiling module altera_mult_add
+# -- Compiling module altera_mult_add_rtl
+# -- Compiling module ama_signed_extension_function
+# -- Compiling module ama_dynamic_signed_function
+# -- Compiling module ama_register_function
+# -- Compiling module ama_register_with_ext_function
+# -- Compiling module ama_data_split_reg_ext_function
+# -- Compiling module ama_coef_reg_ext_function
+# -- Compiling module ama_adder_function
+# -- Compiling module ama_multiplier_function
+# -- Compiling module ama_preadder_function
+# -- Compiling module ama_chainout_adder_accumulator_function
+# -- Compiling module ama_systolic_adder_function
+# -- Compiling module ama_scanchain
+# -- Compiling module ama_latency_function
+# -- Compiling module altera_pll_reconfig_tasks
+# -- Compiling module altera_syncram
+# -- Compiling module altera_syncram_forwarding_logic
+# -- Compiling module ALTERA_LNSIM_MEMORY_INITIALIZATION
+# -- Compiling module altera_stratixv_pll
+# -- Compiling module altera_arriav_pll
+# -- Compiling module altera_arriavgz_pll
+# -- Compiling module altera_cyclonev_pll
+# -- Compiling module altera_pll
+# -- Compiling module dps_extra_kick
+# -- Compiling module dprio_init
+# -- Compiling module dps_pulse_gen
+# -- Compiling module altera_iopll
+# -- Compiling module dps_pulse_gen_iopll
+# -- Compiling module twentynm_iopll_arlol
+# -- Compiling module fourteennm_altera_iopll
+# -- Compiling module dps_pulse_gen_fourteennm_iopll
+# -- Compiling package fourteennm_iopll_functions
+# -- Compiling module fourteennm_simple_iopll
+# -- Importing package fourteennm_iopll_functions
+# -- Compiling module fourteennm_sub_iopll
+# -- Compiling module twentynm_iopll_ip
+# -- Compiling module altera_iopll_rotation_lcells
+# -- Compiling module altera_pll_dps_lcell_comb
+# -- Compiling module iopll_bootstrap
+# 
+# Top level modules:
+# 	generic_cdr
+# 	generic_m20k
+# 	generic_m10k
+# 	common_porta_latches
+# 	generic_28nm_hp_mlab_cell_impl
+# 	generic_28nm_lc_mlab_cell_impl
+# 	generic_14nm_mlab_cell_impl
+# 	generic_mux
+# 	generic_device_pll
+# 	altera_mult_add
+# 	altera_pll_reconfig_tasks
+# 	altera_syncram
+# 	altera_pll
+# 	altera_iopll
+# 	fourteennm_altera_iopll
+# 	fourteennm_simple_iopll
+# End time: 21:13:12 on Feb 09,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vlib verilog_libs/cycloneive_ver
+# ** Warning: (vlib-34) Library already exists at "verilog_libs/cycloneive_ver".
+# vmap cycloneive_ver ./verilog_libs/cycloneive_ver
+# Model Technology ModelSim SE-64 vmap 10.7 Lib Mapping Utility 2017.12 Dec  7 2017
+# vmap cycloneive_ver ./verilog_libs/cycloneive_ver 
+# Modifying modelsim.ini
+# vlog -vlog01compat -work cycloneive_ver {d:/edatools/quartus18/quartus/eda/sim_lib/cycloneive_atoms.v}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 21:13:12 on Feb 09,2023
+# vlog -reportprogress 300 -vlog01compat -work cycloneive_ver d:/edatools/quartus18/quartus/eda/sim_lib/cycloneive_atoms.v 
+# -- Compiling UDP CYCLONEIVE_PRIM_DFFE
+# -- Compiling UDP CYCLONEIVE_PRIM_DFFEAS
+# -- Compiling UDP CYCLONEIVE_PRIM_DFFEAS_HIGH
+# -- Compiling module cycloneive_dffe
+# -- Compiling module cycloneive_mux21
+# -- Compiling module cycloneive_mux41
+# -- Compiling module cycloneive_and1
+# -- Compiling module cycloneive_and16
+# -- Compiling module cycloneive_bmux21
+# -- Compiling module cycloneive_b17mux21
+# -- Compiling module cycloneive_nmux21
+# -- Compiling module cycloneive_b5mux21
+# -- Compiling module cycloneive_latch
+# -- Compiling module cycloneive_routing_wire
+# -- Compiling module cycloneive_m_cntr
+# -- Compiling module cycloneive_n_cntr
+# -- Compiling module cycloneive_scale_cntr
+# -- Compiling module cycloneive_pll_reg
+# -- Compiling module cycloneive_pll
+# -- Compiling module cycloneive_lcell_comb
+# -- Compiling module cycloneive_ff
+# -- Compiling module cycloneive_ram_pulse_generator
+# -- Compiling module cycloneive_ram_register
+# -- Compiling module cycloneive_ram_block
+# -- Compiling module cycloneive_mac_data_reg
+# -- Compiling module cycloneive_mac_sign_reg
+# -- Compiling module cycloneive_mac_mult_internal
+# -- Compiling module cycloneive_mac_mult
+# -- Compiling module cycloneive_mac_out
+# -- Compiling module cycloneive_io_ibuf
+# -- Compiling module cycloneive_io_obuf
+# -- Compiling module cycloneive_ddio_out
+# -- Compiling module cycloneive_ddio_oe
+# -- Compiling module cycloneive_pseudo_diff_out
+# -- Compiling module cycloneive_io_pad
+# -- Compiling module cycloneive_asmiblock
+# -- Compiling module cycloneive_ena_reg
+# -- Compiling module cycloneive_clkctrl
+# -- Compiling module cycloneive_rublock
+# -- Compiling module cycloneive_apfcontroller
+# -- Compiling module cycloneive_termination_ctrl
+# -- Compiling module cycloneive_termination_rupdn
+# -- Compiling module cycloneive_termination
+# -- Compiling module cycloneive_jtag
+# -- Compiling module cycloneive_crcblock
+# -- Compiling module cycloneive_oscillator
+# 
+# Top level modules:
+# 	cycloneive_dffe
+# 	cycloneive_and1
+# 	cycloneive_and16
+# 	cycloneive_bmux21
+# 	cycloneive_b17mux21
+# 	cycloneive_nmux21
+# 	cycloneive_b5mux21
+# 	cycloneive_pll_reg
+# 	cycloneive_pll
+# 	cycloneive_lcell_comb
+# 	cycloneive_ff
+# 	cycloneive_ram_block
+# 	cycloneive_mac_mult
+# 	cycloneive_mac_out
+# 	cycloneive_io_ibuf
+# 	cycloneive_io_obuf
+# 	cycloneive_ddio_out
+# 	cycloneive_ddio_oe
+# 	cycloneive_pseudo_diff_out
+# 	cycloneive_io_pad
+# 	cycloneive_asmiblock
+# 	cycloneive_clkctrl
+# 	cycloneive_rublock
+# 	cycloneive_apfcontroller
+# 	cycloneive_termination
+# 	cycloneive_jtag
+# 	cycloneive_crcblock
+# 	cycloneive_oscillator
+# End time: 21:13:13 on Feb 09,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is 29378@LAPTOP-FU74F2BN.
+# vlib rtl_work
+# ** Warning: (vlib-34) Library already exists at "rtl_work".
+# vmap work rtl_work
+# Model Technology ModelSim SE-64 vmap 10.7 Lib Mapping Utility 2017.12 Dec  7 2017
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/mid/seg_dynamic {D:/PrjWorkspace/Dissertation/version/v2/rtl/mid/seg_dynamic/seg_dynamic.v}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 21:13:15 on Feb 09,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/mid/seg_dynamic" D:/PrjWorkspace/Dissertation/version/v2/rtl/mid/seg_dynamic/seg_dynamic.v 
+# -- Compiling module seg_dynamic
+# 
+# Top level modules:
+# 	seg_dynamic
+# End time: 21:13:15 on Feb 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/mid/seg_dynamic {D:/PrjWorkspace/Dissertation/version/v2/rtl/mid/seg_dynamic/binary_8421.v}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 21:13:15 on Feb 09,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/mid/seg_dynamic" D:/PrjWorkspace/Dissertation/version/v2/rtl/mid/seg_dynamic/binary_8421.v 
+# -- Compiling module binary_8421
+# 
+# Top level modules:
+# 	binary_8421
+# End time: 21:13:15 on Feb 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/canny/otus {D:/PrjWorkspace/Dissertation/version/v2/rtl/canny/otus/otus_dsp.v}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 21:13:15 on Feb 09,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/canny/otus" D:/PrjWorkspace/Dissertation/version/v2/rtl/canny/otus/otus_dsp.v 
+# -- Compiling module otus_dsp
+# 
+# Top level modules:
+# 	otus_dsp
+# End time: 21:13:15 on Feb 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/canny/otus {D:/PrjWorkspace/Dissertation/version/v2/rtl/canny/otus/otus.v}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 21:13:15 on Feb 09,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/canny/otus" D:/PrjWorkspace/Dissertation/version/v2/rtl/canny/otus/otus.v 
+# -- Compiling module otus
+# 
+# Top level modules:
+# 	otus
+# End time: 21:13:15 on Feb 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/canny/otus {D:/PrjWorkspace/Dissertation/version/v2/rtl/canny/otus/histo.v}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 21:13:16 on Feb 09,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/canny/otus" D:/PrjWorkspace/Dissertation/version/v2/rtl/canny/otus/histo.v 
+# -- Compiling module histo
+# 
+# Top level modules:
+# 	histo
+# End time: 21:13:16 on Feb 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/mid {D:/PrjWorkspace/Dissertation/version/v2/rtl/mid/get_NegPos.v}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 21:13:16 on Feb 09,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/mid" D:/PrjWorkspace/Dissertation/version/v2/rtl/mid/get_NegPos.v 
+# -- Compiling module getNegPos
+# 
+# Top level modules:
+# 	getNegPos
+# End time: 21:13:16 on Feb 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/canny {D:/PrjWorkspace/Dissertation/version/v2/rtl/canny/canny5_DTM.v}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 21:13:16 on Feb 09,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/canny" D:/PrjWorkspace/Dissertation/version/v2/rtl/canny/canny5_DTM.v 
+# -- Compiling module canny5_DTM
+# 
+# Top level modules:
+# 	canny5_DTM
+# End time: 21:13:16 on Feb 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/canny {D:/PrjWorkspace/Dissertation/version/v2/rtl/canny/canny4_NMS.v}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 21:13:16 on Feb 09,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/canny" D:/PrjWorkspace/Dissertation/version/v2/rtl/canny/canny4_NMS.v 
+# -- Compiling module canny4_NMS
+# 
+# Top level modules:
+# 	canny4_NMS
+# End time: 21:13:16 on Feb 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/canny {D:/PrjWorkspace/Dissertation/version/v2/rtl/canny/opr_3x3_1024x8.v}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 21:13:16 on Feb 09,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/canny" D:/PrjWorkspace/Dissertation/version/v2/rtl/canny/opr_3x3_1024x8.v 
+# -- Compiling module opr_3x3_1024x8
+# 
+# Top level modules:
+# 	opr_3x3_1024x8
+# End time: 21:13:16 on Feb 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/canny {D:/PrjWorkspace/Dissertation/version/v2/rtl/canny/canny3_sobel.v}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 21:13:16 on Feb 09,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/canny" D:/PrjWorkspace/Dissertation/version/v2/rtl/canny/canny3_sobel.v 
+# -- Compiling module canny3_sobel
+# 
+# Top level modules:
+# 	canny3_sobel
+# End time: 21:13:16 on Feb 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/canny {D:/PrjWorkspace/Dissertation/version/v2/rtl/canny/canny2_gaus.v}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 21:13:16 on Feb 09,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/canny" D:/PrjWorkspace/Dissertation/version/v2/rtl/canny/canny2_gaus.v 
+# -- Compiling module canny2_gaus
+# 
+# Top level modules:
+# 	canny2_gaus
+# End time: 21:13:16 on Feb 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/canny {D:/PrjWorkspace/Dissertation/version/v2/rtl/canny/canny1_YCbCr.v}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 21:13:17 on Feb 09,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/canny" D:/PrjWorkspace/Dissertation/version/v2/rtl/canny/canny1_YCbCr.v 
+# -- Compiling module YCbCr
+# 
+# Top level modules:
+# 	YCbCr
+# End time: 21:13:17 on Feb 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/canny {D:/PrjWorkspace/Dissertation/version/v2/rtl/canny/canny_top.v}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 21:13:17 on Feb 09,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/canny" D:/PrjWorkspace/Dissertation/version/v2/rtl/canny/canny_top.v 
+# -- Compiling module canny_top
+# 
+# Top level modules:
+# 	canny_top
+# End time: 21:13:17 on Feb 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/cmos/i2c {D:/PrjWorkspace/Dissertation/version/v2/rtl/cmos/i2c/i2c_master_top.v}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 21:13:17 on Feb 09,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/cmos/i2c" D:/PrjWorkspace/Dissertation/version/v2/rtl/cmos/i2c/i2c_master_top.v 
+# -- Compiling module i2c_master_top
+# 
+# Top level modules:
+# 	i2c_master_top
+# End time: 21:13:17 on Feb 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/cmos/i2c {D:/PrjWorkspace/Dissertation/version/v2/rtl/cmos/i2c/i2c_master_defines.v}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 21:13:17 on Feb 09,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/cmos/i2c" D:/PrjWorkspace/Dissertation/version/v2/rtl/cmos/i2c/i2c_master_defines.v 
+# End time: 21:13:17 on Feb 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/ip/fifo {D:/PrjWorkspace/Dissertation/version/v2/rtl/ip/fifo/afifo_16_512.v}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 21:13:17 on Feb 09,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/ip/fifo" D:/PrjWorkspace/Dissertation/version/v2/rtl/ip/fifo/afifo_16_512.v 
+# -- Compiling module afifo_16_512
+# 
+# Top level modules:
+# 	afifo_16_512
+# End time: 21:13:18 on Feb 09,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl {D:/PrjWorkspace/Dissertation/version/v2/rtl/top.v}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 21:13:18 on Feb 09,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl" D:/PrjWorkspace/Dissertation/version/v2/rtl/top.v 
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 21:13:18 on Feb 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/vga {D:/PrjWorkspace/Dissertation/version/v2/rtl/vga/video_define.v}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 21:13:18 on Feb 09,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/vga" D:/PrjWorkspace/Dissertation/version/v2/rtl/vga/video_define.v 
+# End time: 21:13:18 on Feb 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/vga {D:/PrjWorkspace/Dissertation/version/v2/rtl/vga/rgb565_gen.v}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 21:13:18 on Feb 09,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/vga" D:/PrjWorkspace/Dissertation/version/v2/rtl/vga/rgb565_gen.v 
+# -- Compiling module rgb565_gen
+# 
+# Top level modules:
+# 	rgb565_gen
+# End time: 21:13:18 on Feb 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/sdram {D:/PrjWorkspace/Dissertation/version/v2/rtl/sdram/sdram_core.v}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 21:13:18 on Feb 09,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/sdram" D:/PrjWorkspace/Dissertation/version/v2/rtl/sdram/sdram_core.v 
+# -- Compiling module sdram_core
+# 
+# Top level modules:
+# 	sdram_core
+# End time: 21:13:18 on Feb 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/sdram {D:/PrjWorkspace/Dissertation/version/v2/rtl/sdram/frame_read_write.v}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 21:13:18 on Feb 09,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/sdram" D:/PrjWorkspace/Dissertation/version/v2/rtl/sdram/frame_read_write.v 
+# -- Compiling module frame_read_write
+# 
+# Top level modules:
+# 	frame_read_write
+# End time: 21:13:18 on Feb 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/sdram {D:/PrjWorkspace/Dissertation/version/v2/rtl/sdram/frame_fifo_write.v}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 21:13:18 on Feb 09,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/sdram" D:/PrjWorkspace/Dissertation/version/v2/rtl/sdram/frame_fifo_write.v 
+# -- Compiling module frame_fifo_write
+# 
+# Top level modules:
+# 	frame_fifo_write
+# End time: 21:13:18 on Feb 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/sdram {D:/PrjWorkspace/Dissertation/version/v2/rtl/sdram/frame_fifo_read.v}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 21:13:19 on Feb 09,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/sdram" D:/PrjWorkspace/Dissertation/version/v2/rtl/sdram/frame_fifo_read.v 
+# -- Compiling module frame_fifo_read
+# 
+# Top level modules:
+# 	frame_fifo_read
+# End time: 21:13:19 on Feb 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/mid {D:/PrjWorkspace/Dissertation/version/v2/rtl/mid/cmos_write_req_gen.v}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 21:13:19 on Feb 09,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/mid" D:/PrjWorkspace/Dissertation/version/v2/rtl/mid/cmos_write_req_gen.v 
+# -- Compiling module cmos_write_req_gen
+# 
+# Top level modules:
+# 	cmos_write_req_gen
+# End time: 21:13:19 on Feb 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/ip/pll {D:/PrjWorkspace/Dissertation/version/v2/rtl/ip/pll/video_pll.v}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 21:13:19 on Feb 09,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/ip/pll" D:/PrjWorkspace/Dissertation/version/v2/rtl/ip/pll/video_pll.v 
+# -- Compiling module video_pll
+# 
+# Top level modules:
+# 	video_pll
+# End time: 21:13:19 on Feb 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/ip/pll {D:/PrjWorkspace/Dissertation/version/v2/rtl/ip/pll/sys_pll.v}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 21:13:19 on Feb 09,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/ip/pll" D:/PrjWorkspace/Dissertation/version/v2/rtl/ip/pll/sys_pll.v 
+# -- Compiling module sys_pll
+# 
+# Top level modules:
+# 	sys_pll
+# End time: 21:13:19 on Feb 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/cmos {D:/PrjWorkspace/Dissertation/version/v2/rtl/cmos/lut_ov5640_rgb565_1024_768.v}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 21:13:19 on Feb 09,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/cmos" D:/PrjWorkspace/Dissertation/version/v2/rtl/cmos/lut_ov5640_rgb565_1024_768.v 
+# -- Compiling module lut_ov5640_rgb565_1024_768
+# 
+# Top level modules:
+# 	lut_ov5640_rgb565_1024_768
+# End time: 21:13:19 on Feb 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/cmos {D:/PrjWorkspace/Dissertation/version/v2/rtl/cmos/i2c_config.v}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 21:13:19 on Feb 09,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/cmos" D:/PrjWorkspace/Dissertation/version/v2/rtl/cmos/i2c_config.v 
+# -- Compiling module i2c_config
+# 
+# Top level modules:
+# 	i2c_config
+# End time: 21:13:20 on Feb 09,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/cmos {D:/PrjWorkspace/Dissertation/version/v2/rtl/cmos/cmos_8_16bit.v}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 21:13:20 on Feb 09,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/cmos" D:/PrjWorkspace/Dissertation/version/v2/rtl/cmos/cmos_8_16bit.v 
+# -- Compiling module cmos_8_16bit
+# 
+# Top level modules:
+# 	cmos_8_16bit
+# End time: 21:13:20 on Feb 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/ip/shift {D:/PrjWorkspace/Dissertation/version/v2/rtl/ip/shift/shift1024x8.v}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 21:13:20 on Feb 09,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/ip/shift" D:/PrjWorkspace/Dissertation/version/v2/rtl/ip/shift/shift1024x8.v 
+# -- Compiling module shift1024x8
+# 
+# Top level modules:
+# 	shift1024x8
+# End time: 21:13:20 on Feb 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/ip/ram {D:/PrjWorkspace/Dissertation/version/v2/rtl/ip/ram/ram2p_128x20b.v}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 21:13:20 on Feb 09,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/ip/ram" D:/PrjWorkspace/Dissertation/version/v2/rtl/ip/ram/ram2p_128x20b.v 
+# -- Compiling module ram2p_128x20b
+# 
+# Top level modules:
+# 	ram2p_128x20b
+# End time: 21:13:20 on Feb 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/ip/lpm_div {D:/PrjWorkspace/Dissertation/version/v2/rtl/ip/lpm_div/div_23_16.v}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 21:13:20 on Feb 09,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/ip/lpm_div" D:/PrjWorkspace/Dissertation/version/v2/rtl/ip/lpm_div/div_23_16.v 
+# -- Compiling module div_23_16
+# 
+# Top level modules:
+# 	div_23_16
+# End time: 21:13:20 on Feb 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/ip/lpm_mult {D:/PrjWorkspace/Dissertation/version/v2/rtl/ip/lpm_mult/mul_32_32.v}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 21:13:20 on Feb 09,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/ip/lpm_mult" D:/PrjWorkspace/Dissertation/version/v2/rtl/ip/lpm_mult/mul_32_32.v 
+# -- Compiling module mul_32_32
+# 
+# Top level modules:
+# 	mul_32_32
+# End time: 21:13:20 on Feb 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/PrjWorkspace/Dissertation/version/v2/prj/db {D:/PrjWorkspace/Dissertation/version/v2/prj/db/sys_pll_altpll.v}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 21:13:21 on Feb 09,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/PrjWorkspace/Dissertation/version/v2/prj/db" D:/PrjWorkspace/Dissertation/version/v2/prj/db/sys_pll_altpll.v 
+# -- Compiling module sys_pll_altpll
+# 
+# Top level modules:
+# 	sys_pll_altpll
+# End time: 21:13:21 on Feb 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/PrjWorkspace/Dissertation/version/v2/prj/db {D:/PrjWorkspace/Dissertation/version/v2/prj/db/video_pll_altpll.v}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 21:13:21 on Feb 09,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/PrjWorkspace/Dissertation/version/v2/prj/db" D:/PrjWorkspace/Dissertation/version/v2/prj/db/video_pll_altpll.v 
+# -- Compiling module video_pll_altpll
+# 
+# Top level modules:
+# 	video_pll_altpll
+# End time: 21:13:21 on Feb 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/cmos/i2c {D:/PrjWorkspace/Dissertation/version/v2/rtl/cmos/i2c/i2c_master_byte_ctrl.v}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 21:13:21 on Feb 09,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/cmos/i2c" D:/PrjWorkspace/Dissertation/version/v2/rtl/cmos/i2c/i2c_master_byte_ctrl.v 
+# -- Compiling module i2c_master_byte_ctrl
+# 
+# Top level modules:
+# 	i2c_master_byte_ctrl
+# End time: 21:13:21 on Feb 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/cmos/i2c {D:/PrjWorkspace/Dissertation/version/v2/rtl/cmos/i2c/i2c_master_bit_ctrl.v}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 21:13:21 on Feb 09,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/cmos/i2c" D:/PrjWorkspace/Dissertation/version/v2/rtl/cmos/i2c/i2c_master_bit_ctrl.v 
+# -- Compiling module i2c_master_bit_ctrl
+# 
+# Top level modules:
+# 	i2c_master_bit_ctrl
+# End time: 21:13:21 on Feb 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/vga {D:/PrjWorkspace/Dissertation/version/v2/rtl/vga/color_bar.v}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 21:13:21 on Feb 09,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/PrjWorkspace/Dissertation/version/v2/rtl/vga" D:/PrjWorkspace/Dissertation/version/v2/rtl/vga/color_bar.v 
+# -- Compiling module color_bar
+# 
+# Top level modules:
+# 	color_bar
+# End time: 21:13:21 on Feb 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/PrjWorkspace/Dissertation/version/v2/prj/../tb/tb {D:/PrjWorkspace/Dissertation/version/v2/prj/../tb/tb/tb_median_filtering.v}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 21:13:21 on Feb 09,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/PrjWorkspace/Dissertation/version/v2/prj/../tb/tb" D:/PrjWorkspace/Dissertation/version/v2/prj/../tb/tb/tb_median_filtering.v 
+# -- Compiling module tb_median_filtering
+# 
+# Top level modules:
+# 	tb_median_filtering
+# End time: 21:13:21 on Feb 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/PrjWorkspace/Dissertation/version/v2/prj/../tb/my_ip/fifo {D:/PrjWorkspace/Dissertation/version/v2/prj/../tb/my_ip/fifo/sfifo.v}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 21:13:21 on Feb 09,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/PrjWorkspace/Dissertation/version/v2/prj/../tb/my_ip/fifo" D:/PrjWorkspace/Dissertation/version/v2/prj/../tb/my_ip/fifo/sfifo.v 
+# -- Compiling module sfifo
+# 
+# Top level modules:
+# 	sfifo
+# End time: 21:13:22 on Feb 09,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/PrjWorkspace/Dissertation/version/v2/prj/../tb/my_ip/med_filter {D:/PrjWorkspace/Dissertation/version/v2/prj/../tb/my_ip/med_filter/median_filtering.v}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 21:13:22 on Feb 09,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/PrjWorkspace/Dissertation/version/v2/prj/../tb/my_ip/med_filter" D:/PrjWorkspace/Dissertation/version/v2/prj/../tb/my_ip/med_filter/median_filtering.v 
+# -- Compiling module median_filtering
+# 
+# Top level modules:
+# 	median_filtering
+# End time: 21:13:22 on Feb 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/PrjWorkspace/Dissertation/version/v2/prj/../tb/my_ip/med_filter {D:/PrjWorkspace/Dissertation/version/v2/prj/../tb/my_ip/med_filter/sort.v}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 21:13:22 on Feb 09,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/PrjWorkspace/Dissertation/version/v2/prj/../tb/my_ip/med_filter" D:/PrjWorkspace/Dissertation/version/v2/prj/../tb/my_ip/med_filter/sort.v 
+# -- Compiling module sort
+# 
+# Top level modules:
+# 	sort
+# End time: 21:13:22 on Feb 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/PrjWorkspace/Dissertation/version/v2/prj/../tb/my_ip/shift {D:/PrjWorkspace/Dissertation/version/v2/prj/../tb/my_ip/shift/opr_3x3.v}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 21:13:22 on Feb 09,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/PrjWorkspace/Dissertation/version/v2/prj/../tb/my_ip/shift" D:/PrjWorkspace/Dissertation/version/v2/prj/../tb/my_ip/shift/opr_3x3.v 
+# -- Compiling module opr_3x3
+# 
+# Top level modules:
+# 	opr_3x3
+# End time: 21:13:22 on Feb 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/PrjWorkspace/Dissertation/version/v2/prj/../tb/my_ip/shift {D:/PrjWorkspace/Dissertation/version/v2/prj/../tb/my_ip/shift/shift_1x3.v}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 21:13:22 on Feb 09,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/PrjWorkspace/Dissertation/version/v2/prj/../tb/my_ip/shift" D:/PrjWorkspace/Dissertation/version/v2/prj/../tb/my_ip/shift/shift_1x3.v 
+# -- Compiling module shift_1x3
+# 
+# Top level modules:
+# 	shift_1x3
+# End time: 21:13:22 on Feb 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/PrjWorkspace/Dissertation/version/v2/prj/../tb/devide {D:/PrjWorkspace/Dissertation/version/v2/prj/../tb/devide/gray_gen.v}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 21:13:22 on Feb 09,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/PrjWorkspace/Dissertation/version/v2/prj/../tb/devide" D:/PrjWorkspace/Dissertation/version/v2/prj/../tb/devide/gray_gen.v 
+# -- Compiling module gray_gen
+# 
+# Top level modules:
+# 	gray_gen
+# End time: 21:13:22 on Feb 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/PrjWorkspace/Dissertation/version/v2/prj/../tb/devide {D:/PrjWorkspace/Dissertation/version/v2/prj/../tb/devide/my_color_bar.v}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 21:13:22 on Feb 09,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/PrjWorkspace/Dissertation/version/v2/prj/../tb/devide" D:/PrjWorkspace/Dissertation/version/v2/prj/../tb/devide/my_color_bar.v 
+# -- Compiling module my_color_bar
+# 
+# Top level modules:
+# 	my_color_bar
+# End time: 21:13:23 on Feb 09,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/PrjWorkspace/Dissertation/version/v2/prj/../tb/devide {D:/PrjWorkspace/Dissertation/version/v2/prj/../tb/devide/my_video_define.v}
+# Model Technology ModelSim SE-64 vlog 10.7 Compiler 2017.12 Dec  7 2017
+# Start time: 21:13:23 on Feb 09,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/PrjWorkspace/Dissertation/version/v2/prj/../tb/devide" D:/PrjWorkspace/Dissertation/version/v2/prj/../tb/devide/my_video_define.v 
+# End time: 21:13:23 on Feb 09,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  tb_median_filtering
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" tb_median_filtering 
+# Start time: 21:13:24 on Feb 09,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.tb_median_filtering(fast)
+# Loading work.median_filtering(fast)
+# Loading work.opr_3x3(fast)
+# Loading work.shift_1x3(fast)
+# Loading work.sfifo(fast)
+# Loading work.sort(fast)
+# Loading work.gray_gen(fast)
+# Loading work.my_color_bar(fast)
+# Loading work.getNegPos(fast)
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: 29378  Hostname: LAPTOP-FU74F2BN  ProcessID: 15772
+#           Attempting to use alternate WLF file "./wlft83xehy".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft83xehy
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: $stop    : D:/PrjWorkspace/Dissertation/version/v2/prj/../tb/tb/tb_median_filtering.v(48)
+#    Time: 368640 ns  Iteration: 0  Instance: /tb_median_filtering
+# Break in Module tb_median_filtering at D:/PrjWorkspace/Dissertation/version/v2/prj/../tb/tb/tb_median_filtering.v line 48
+# Causality operation skipped due to absence of debug database file
+# End time: 21:23:19 on Feb 09,2023, Elapsed time: 0:09:55
+# Errors: 0, Warnings: 3

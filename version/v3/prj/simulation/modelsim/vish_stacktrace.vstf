@@ -1,0 +1,42 @@
+# Current time Sun Feb 05 17:46:12 2023
+# ModelSim SE Stack Trace
+# Program = vish
+# Id = "10.7"
+# Version = "2017.12"
+# Date = "Dec  7 2017"
+# Platform = win64
+
+Exception c0000005 has occurred at address 4024a3bb. Traceback:
+# 0    0x4024a3bb: 'Mtirpc_Init + 0x8d48b'
+# 1    0x4024a190: 'Mtirpc_Init + 0x8d260'
+# 2    0x402060e4: 'Mtirpc_Init + 0x491b4'
+# 3    0x402000b0: 'Mtirpc_Init + 0x43180'
+# 4    0x6fef6c03: 'TclNRRunCallbacks + 0x63'
+# 5    0x93b50bfa: 'Itcl_EvalMemberCode + 0x3ba'
+# 6    0x93b51dbb: 'Itcl_ExecMethod + 0x23b'
+# 7    0x93b59879: 'Itcl_EvalArgs + 0x1c9'
+# 8    0x93b54b51: 'Itcl_HandleInstance + 0x2c1'
+# 9    0x6fef6c03: 'TclNRRunCallbacks + 0x63'
+# 10   0x93b50bfa: 'Itcl_EvalMemberCode + 0x3ba'
+# 11   0x93b51dbb: 'Itcl_ExecMethod + 0x23b'
+# 12   0x93b59879: 'Itcl_EvalArgs + 0x1c9'
+# 13   0x93b54b51: 'Itcl_HandleInstance + 0x2c1'
+# 14   0x6fef6c03: 'TclNRRunCallbacks + 0x63'
+# 15   0x6fef586c: 'TclCleanupCommand + 0x88c'
+# 16   0x6fef8d4f: 'Tcl_EvalEx + 0x1f'
+# 17   0x6fd3431a: 'Tk_BindEvent + 0x91a'
+# 18   0x6fd6bd41: 'TkBindEventProc + 0x291'
+# 19   0x6fd7c614: 'Tk_HandleEvent + 0x2f4'
+# 20   0x6fd7b2da: 'TkDeleteThreadExitHandler + 0x31a'
+# 21   0x6ff9d41c: 'Tcl_ServiceEvent + 0x9c'
+# 22   0x6ff9d0b4: 'Tcl_DoOneEvent + 0x124'
+# 23   0x6fd7aee5: 'Tk_MainLoop + 0x25'
+# 24   0x6fdbd282: 'Tk_MainEx + 0x932'
+# 25   0x401df790: 'Mtirpc_Init + 0x22860'
+# 26   0x401e1e38: 'Mtirpc_Init + 0x24f08'
+# 27   0x40613487: 'Tclsqlite_Init + 0x5717'
+# 28   0xcfcc7614: 'BaseThreadInitThunk + 0x14'
+# 29   0xd03e26a1: 'RtlUserThreadStart + 0x21'
+StackWalk failed 0
+# End of Stack Trace
+
